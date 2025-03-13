@@ -1,0 +1,27 @@
+.category{
+    .category-item{
+        width: 100%;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        img{
+            object-fit: cover;
+            
+        }
+        
+        .item-detail{
+            position: absolute;
+            left: 24px;
+            right: 24px;
+            bottom: 24px;
+            z-index: 10;
+            border-radius: 5px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(25px);
+            @include media-query(1024px){
+                width: fit-content;
+            }
+        }
+    }
+    
+}

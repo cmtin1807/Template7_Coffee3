@@ -1,0 +1,76 @@
+.modal {
+    &.show {
+        display: grid !important;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .modal-dialog {
+        max-width: 70%;
+
+        @include media-query(575px) {
+            width: auto;
+        }
+        @include media-query(490px) {
+            max-width: 100%;
+        }
+
+        &.compare-dialog {
+            @include media-query(1024px) {
+                overflow: hidden;
+                max-width: 100% !important;
+            }
+        }
+
+        .modal-content {
+            background: transparent;
+            border: 0;
+
+            .modal-body {
+                .detail-wrapper {
+                    .quick-image-box {
+                        height: 100%;
+                        border-radius: $br-10;
+                        background-color: $accent-2;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+
+                        @include media-query(1499px) {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        @include media-query(490px) {
+                            width: 100%;
+                            height: 100%;
+                            padding: 32px;
+                        }
+                    }
+
+                    .product-text-container {
+                        height: 100%;
+                        position: relative;
+                        border-radius: $br-10;
+                        padding: clamp(24px, 1.667vw, 48px);
+
+                        @include media-query(490px) {
+                            margin-top: 8px;
+                        }
+                       
+                        .quantity {
+                            @include media-query(490px) {
+                                display: none;
+                            }
+                        }
+
+                        .close-content {
+                            position: absolute;
+                            right: 40px;
+                            top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

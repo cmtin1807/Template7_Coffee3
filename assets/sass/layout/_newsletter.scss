@@ -1,0 +1,82 @@
+.newsletter-sec {
+    position: relative;
+
+    .newsletter-container {
+        background: url('../media/background/newsletter-bg.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: $br-48;
+
+        .newsletter-imgs {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include media-query(1025px) {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                padding: $gap-24;
+            }
+
+            .news-img-1 {
+                margin-left: -10%;
+                margin-top: 5.5%;
+                padding-bottom: 4.8%;
+
+                @include media-query(1399px) {
+                    margin-left: -14%;
+                }
+
+                @include media-query(1025px) {
+                    margin: 0 auto;
+                }
+            }
+
+            .news-img-2 {
+                margin-right: -29%;
+                margin-bottom: -4%;
+
+                @include media-query(1399px) {
+                    margin-right: -45%;
+                    margin-bottom: -8%;
+                }
+
+                @include media-query(1025px) {
+                    display: none;
+                }
+            }
+        }
+
+        .newsletter-block {
+            display: inline-flex;
+            align-items: center;
+            gap: $gap-8;
+            padding: clamp(14px, 0.938vw, 36px) clamp(13px, 1.25vw, 48px);
+            border-radius: $br-48;
+            background-color: $accent-2;
+            backdrop-filter: blur(17.5px);
+            width: 65%;
+
+            .news-input {
+                width: 100%;
+                background-color: transparent;
+                color: $dark-gray;
+                border: none;
+
+                &::placeholder {
+                    color: $dark-gray;
+                    font-size: clamp(14px, 0.938vw, 36px);
+                    font-weight: 400;
+                    line-height: 160%;
+                }
+
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+    }
+}

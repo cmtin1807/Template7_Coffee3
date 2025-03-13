@@ -1,0 +1,55 @@
+.team{
+    .team-member{
+        width: 100%;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        background: $black;
+        cursor: pointer;
+        text-align: center;
+        
+        img{
+            object-fit: cover;
+            
+        }
+        .member-detail{
+            position: absolute;
+            width: calc(100% - 48px);
+            left: 24px;
+            bottom: 24px;
+            z-index: 10;
+            border-radius: 5px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(25px);
+            .social{
+                height: 0;
+                transition: $transition;
+                overflow: hidden;
+                .social-link{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 16px;
+    
+                    .vertical-line{
+                        width: 1px;
+                        height: 16px;
+                        background: $accent-2;
+                    }
+                    a{
+                        &:hover{
+                            .fill-sec{
+                                fill: $accent-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .social{
+                height: 26px;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.account {
+    padding: clamp(20px, 1.667vw, 64px);
+    background-color: $white;
+    border: 0.5px solid $light-grey;
+    border-radius: $br-24;
+    height: 100%;
+
+    &.account-1 {
+
+        @include media-query(1024px) {
+            height: auto;
+        }
+    }
+
+    .or {
+        position: relative;
+        text-align: center;
+        color: $dark-gray;
+        padding: clamp(16px, 1.25vw, 32px) 0;
+
+        &::after,
+        &::before {
+            content: "";
+            height: 0.75px;
+            width: 46%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 1;
+            background: $light-grey;
+        }
+
+        &::after {
+            right: 0;
+        }
+
+        &::before {
+            left: 0;
+        }
+    }
+
+    .link-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(10px, 0.83vw, 20px);
+        padding: clamp(8px, 0.625vw, 16px) clamp(10px, 0.83vw, 20px);
+        border-radius: 8px;
+        border: 1px solid $light-grey;
+
+        img {
+            width: (24px, 1.66vw, 40px)
+        }
+
+        &:hover {
+            color: $accent-3;
+        }
+    }
+
+    .about-password {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .checkbox {
+            input {
+                padding: 0;
+                display: none;
+                border: 1px solid $accent-1;
+                cursor: pointer;
+
+                &:checked+label {
+                    &:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 2px;
+                        left: 6px;
+                        width: 6px;
+                        height: 13px;
+                        z-index: 10;
+                        border: solid $white;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                    }
+
+                    &:before {
+                        background: $accent-1;
+                        border-color: $accent-1;
+                    }
+                }
+            }
+
+        }
+    }
+}

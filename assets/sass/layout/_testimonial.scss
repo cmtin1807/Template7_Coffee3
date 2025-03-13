@@ -1,0 +1,94 @@
+.testimonial {
+    .testimonial-wrapper {
+        .content-box {
+            display: flex;
+            align-items: flex-start;
+            gap: clamp(16px, 1.25vw, 48px);
+
+            .quotes {
+                width: clamp(64px, 4.479vw, 140px);
+                height: clamp(64px, 4.479vw, 140px);
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                background: #FF5C35;
+                border-radius: 50%;
+            }
+
+            .review-block {
+                width: 27.396vw;
+                @include media-query(1024px){
+                    width: 75%;
+                }
+
+                .rating-box {
+                    .person-info {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: clamp(32px, 2.5vw, 72px);
+
+                        .rate {
+                            width: clamp(48px, 3.333vw, 120px);
+                            height: clamp(48px, 3.333vw, 120px);
+                            display: grid;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $accent-2;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .all-navboxes {
+            padding: clamp(20px, 1.667vw, 64px);
+            border-radius: $br-15;
+            background: $accent-2;
+            margin-top: -86px;
+            overflow: hidden;
+            position: relative;
+
+            .testimonial-asNav-slider {
+                margin: 0 -12px;
+            }
+
+            .nav-box {
+                transition: $transition;
+                background: $accent-1;
+                border-radius: 50%;
+                margin: 0 12px;
+                cursor: pointer;
+
+                &.slick-current {
+                    transition: $transition;
+                    background: transparent;
+                    border: 2px solid $accent-1;
+                }
+                img{
+                    @include media-query(490px){
+                        width: 84px;
+                        height: 84px;
+                    }
+                }
+            }
+        }
+        .testimonial-image{
+            position: relative;
+            img{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 14.479vw;
+                height: 13.281vw;
+                @include media-query(820px){
+                    top: unset;
+                    bottom: 0;
+                }
+                @include media-query(490px){
+                    width: 20%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

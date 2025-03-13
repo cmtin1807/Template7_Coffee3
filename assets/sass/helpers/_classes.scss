@@ -1,0 +1,190 @@
+// Text Colors
+.color-primary {
+  color: $accent-1;
+}
+.primary-hover{
+  &:hover{
+    color: $accent-1;
+  }
+}
+.color-sec {
+  color: $accent-2;
+}
+.color-ter {
+  color: $accent-3;
+}
+
+.black {
+  color: $black;
+}
+
+.light-black {
+  color: $light-black;
+}
+
+.color-white {
+  color: $white;
+}
+
+.dark-gray {
+  color: $dark-gray;
+}
+
+.light-gray {
+  color: $light-grey;
+}
+
+.medium-black {
+  color: $medium-black;
+}
+.medium-gray {
+  color: $medium-gray;
+}
+
+.lightest-gray {
+  color: $lightest-gray;
+}
+
+
+// Background Colors
+.bg-color-primary {
+  background-color: $accent-1;
+}
+
+.bg-color-sec {
+  background-color: $accent-2;
+}
+
+.bg-color-ter {
+  background-color: $accent-3;
+}
+
+.bg-dark-black {
+  background-color: $black;
+}
+
+.bg-light-black {
+  background-color: $light-black;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-dark-gray {
+  background-color: $dark-gray;
+}
+
+.bg-medium-gray {
+  background-color: $medium-gray;
+}
+
+.bg-light-gray {
+  background-color: $lightest-gray;
+}
+
+// Gradient Color
+.accent-gradient {
+  background-color: linear-gradient(180deg, rgba(47, 61, 126, 0.00) 0%, rgba(47, 61, 126, 0.40) 0.01%, rgba(47, 61, 126, 0.20) 45.5%, rgba(47, 61, 126, 0.40) 100%);
+}
+
+.gradient-1{
+  background: $gradient-1 !important;
+}
+.gradient-2{
+  background: $gradient-2 !important;
+}
+.gradient-3{
+  background: $gradient-3 !important;
+}
+
+// ------------- Font Weight -------------- //
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.font-primary{
+  font-family: $font-primary;
+}
+.font-sec{
+  font-family: $font-sec;
+}
+.font-awos{
+  font-family: $font-awesome;
+}
+
+// ------------- Fill && Stroke Color -------------- //
+
+.fill-sec{
+  fill: $accent-2;
+  transition: $transition;
+}
+.fill-white{
+  fill: $white;
+  transition: $transition;
+}
+.stroke-sec{
+  stroke: $accent-2;
+  transition: $transition;
+}
+.stroke-white{
+  stroke: $white;
+  transition: $transition;
+}
+
+// ------------- Border Radius -------------- //
+
+.br-5{
+  border-radius: $br-5;
+}
+.br-8{
+  border-radius: $br-8;
+}
+.br-10{
+  border-radius: $br-10;
+}
+.br-12{
+  border-radius: $br-12;
+}
+.br-15{
+  border-radius: $br-15;
+}
+.br-16{
+  border-radius: $br-16;
+}
+.br-20{
+  border-radius: $br-20;
+}
+.br-24{
+  border-radius: $br-24;
+}
+.br-25{
+  border-radius: $br-25;
+}
+.br-30{
+  border-radius: $br-30;
+}
+
+
+.cursor-pointer{
+  cursor: pointer;
+}

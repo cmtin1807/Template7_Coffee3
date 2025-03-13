@@ -1,0 +1,39 @@
+.contact-section {
+
+    .customer-block {
+        display: flex;
+        align-items: flex-start;
+        gap: $gap-24;
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+
+    .contact-wrapper {
+        padding: $gap-32;
+        border-radius: $br-24;
+        border: 1px solid $light-grey;
+    }
+}
+
+.map {
+    height: 100%;
+
+    .map-wrapper {
+        border-radius: $br-24;
+        height: 100%;
+
+        iframe {
+            border-radius: $br-24;
+            width: 100%;
+            height: clamp(350px, 39.583vw, 800px);
+
+            @include media-query(1599px) {
+                height: 100%;
+            }
+
+            @include media-query(1199px) {
+                height: 350px;
+            }
+        }
+    }
+}

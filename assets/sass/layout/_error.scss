@@ -1,0 +1,31 @@
+.error-section {
+    padding: clamp(44px, 6.25vw, 196px) 0 clamp(48px, 4.167vw, 160px);
+
+    .error-wrapper {
+        background: url('../media/vector/404-bg.png') no-repeat;
+
+        @include media-query(766px) {
+            background-size: contain;
+        }
+
+        h1 {
+            font-size: clamp(140px, 20.833vw, 420px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+
+            /* 480px */
+            @include media-query(766px) {
+                letter-spacing: 2px;
+            }
+        }
+
+        p {
+            br {
+                @include media-query(575px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

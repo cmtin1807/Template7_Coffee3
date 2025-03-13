@@ -1,0 +1,24 @@
+.blog-detail {
+    .image-detail {
+        display: flex;
+        align-items: center;
+        gap: $gap-12;
+
+        .vr-line {
+            width: 48px;
+            height: 1px;
+            background-color: $accent-3;
+        }
+    }
+
+    .quote {
+        display: flex;
+        padding: $gap-24;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $gap-24;
+        border-radius: $br-12;
+        border-left: 2px solid $accent-1;
+        background: linear-gradient(5deg, #F2E0DB 1.57%, #FFF 137.51%);
+    }
+}

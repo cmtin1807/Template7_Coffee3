@@ -1,0 +1,17 @@
+.menu {
+    .menu-block-1 {
+        width: 100%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: clamp(12px, 0.833vw, 32px) clamp(24px, 1.667vw, 64px);
+        border-radius: $br-12;
+        border: 1px solid $accent-2;
+        transition: $transition;
+
+        &:hover {
+            background: linear-gradient(276deg, #F2E0DB 6.1%, #FFF 140.12%);
+        }
+    }
+}

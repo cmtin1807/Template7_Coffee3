@@ -1,0 +1,128 @@
+.blog-sec {
+    position: relative;
+    .beans-vector {
+        position: absolute;
+        left: 6%;
+        top: 9%;
+        animation: shakeBeans 8s ease-in-out infinite alternate;
+
+        @include media-query(1399px) {
+            left: 6%;
+            top: 6% !important;
+        }
+
+        @include media-query(820px) {
+            display: none !important;
+        }
+    }
+
+    @keyframes shakeBeans {
+        0% {
+            transform: rotate(0deg) translateY(0);
+        }
+
+        25% {
+            transform: rotate(-10deg) translateY(-2px);
+        }
+
+        50% {
+            transform: rotate(10deg) translateY(2px);
+        }
+
+        75% {
+            transform: rotate(-8deg) translateY(-1px);
+        }
+
+        100% {
+            transform: rotate(8deg) translateY(1px);
+        }
+
+    }
+}
+
+.blog-sec {
+
+    .blog-1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: $gap-16;
+        border-radius: $br-24;
+
+        .blog-img {
+            overflow: hidden;
+            transition: $transition;
+            width: 100%;
+
+            img {
+                width: 100%;
+                transition: $transition;
+                border-radius: $br-24;
+            }
+        }
+
+        .blog-content {
+            transition: $transition;
+            padding: $gap-24;
+            border-radius: $br-24;
+            background: linear-gradient(5deg, #F2E0DB 1.57%, #FFF 128.95%);
+
+            .time-line {
+                height: 29px;
+                width: 1px;
+                background-color: $light-grey;
+            }
+        }
+
+        .read-more-btn {
+            transition: $transition;
+            display: inline-flex;
+            align-items: center;
+            gap: $gap-8;
+
+            span {
+                color: $accent-3 !important;
+                transition: $transition;
+                text-transform: uppercase;
+                
+                svg {
+                    transform: rotate(30deg);
+                    transition: $transition;
+                }
+            }
+        }
+
+        &:hover {
+            .blog-img {
+                border-radius: $br-24;
+
+                img {
+                    border-radius: $br-24;
+                    transform: scale(1.1);
+                }
+            }
+
+            .blog-content {
+                .hover-content {
+                    color: $accent-1 !important;
+                }
+
+                .read-more-btn {
+                    span {
+                        color: $accent-1 !important;
+
+                        svg {
+                            transform: rotate(-0deg);
+
+                            path {
+                                stroke: $accent-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

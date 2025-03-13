@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Coffee Shop">
+
+    <title>Sip Savor</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+    <!-- PRELOADER START -->
+    <div id="preloader">
+        <div class="coffeeloader">
+            <div class="steam">
+                <div class="smoke1"></div>
+                <div class="smoke2"></div>
+                <div class="smoke3"></div>
+            </div>
+            <div class="cupcontainer">
+                <div class="cup"></div>
+                <div class="glance"></div>
+                <div class="handle"></div>
+            </div>
+            <div class="plate"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+    <!-- PRELOADER END -->
+
+
+
+    <!-- Main Wrapper Start -->
+    <div id="scroll-container">
+
+        <!-- HEADER MENU START -->
+        <header class="header">
+            <div class="container-fluid">
+                <nav class="navigation d-flex align-items-center justify-content-between py-16">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <img src="assets/media/logo.png" alt="/logo" class="header-logo">
+                    </a>
+                    <div class="menu-button-right">
+                        <div class="main-menu__nav">
+                            <ul class="main-menu__list">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0); ">Pages
+                                    </a>
+                                    <ul>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="blogs.html">Blog</a></li>
+                                        <li><a href="blog-with-sidebar.html">Blog with sidebar</a></li>
+                                        <li><a href="blog-detail.html">Blog Detail</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0); ">Shop
+                                    </a>
+                                    <ul>
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="shop-sidebar.html">Shop With Sidebar</a></li>
+                                        <li><a href="product-detail.html">Product Detail</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="account.html">My Account</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="active">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-menu__right">
+                        <div class="search-heart-icon d-sm-flex d-none align-items-center gap-24">
+                            <div class="d-flex align-items-center gap-24">
+                                <a href="checkout.html" class="header-search-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M7.73254 15.5158H7.73364L7.73638 15.5156H20.4844C20.7982 15.5156 21.0741 15.3074 21.1604 15.0057L23.9729 5.16192C24.0335 4.9497 23.991 4.72156 23.8583 4.54541C23.7253 4.36926 23.5175 4.26562 23.2969 4.26562H6.11096L5.60833 2.00372C5.53674 1.68201 5.25146 1.45312 4.92187 1.45312H0.703125C0.314758 1.45312 0 1.76788 0 2.15625C0 2.54462 0.314758 2.85937 0.703125 2.85937H4.35791C4.4469 3.26019 6.76318 13.6836 6.89648 14.2833C6.14923 14.6081 5.625 15.3532 5.625 16.2187C5.625 17.3818 6.57129 18.3281 7.73437 18.3281H20.4844C20.8727 18.3281 21.1875 18.0134 21.1875 17.625C21.1875 17.2366 20.8727 16.9219 20.4844 16.9219H7.73437C7.34674 16.9219 7.03125 16.6064 7.03125 16.2187C7.03125 15.8317 7.34564 15.5167 7.73254 15.5158ZM22.3647 5.67187L19.9539 14.1094H8.29834L6.42334 5.67187H22.3647Z"
+                                            fill="#371406" />
+                                        <path
+                                            d="M7.03125 20.4375C7.03125 21.6006 7.97753 22.5469 9.14062 22.5469C10.3037 22.5469 11.25 21.6006 11.25 20.4375C11.25 19.2744 10.3037 18.3281 9.14062 18.3281C7.97753 18.3281 7.03125 19.2744 7.03125 20.4375ZM9.14062 19.7344C9.52825 19.7344 9.84374 20.0499 9.84374 20.4375C9.84374 20.8251 9.52825 21.1406 9.14062 21.1406C8.75299 21.1406 8.4375 20.8251 8.4375 20.4375C8.4375 20.0499 8.75299 19.7344 9.14062 19.7344Z"
+                                            fill="#371406" />
+                                        <path
+                                            d="M16.9687 20.4375C16.9687 21.6006 17.915 22.5469 19.0781 22.5469C20.2412 22.5469 21.1875 21.6006 21.1875 20.4375C21.1875 19.2744 20.2412 18.3281 19.0781 18.3281C17.915 18.3281 16.9687 19.2744 16.9687 20.4375ZM19.0781 19.7344C19.4657 19.7344 19.7812 20.0499 19.7812 20.4375C19.7812 20.8251 19.4657 21.1406 19.0781 21.1406C18.6905 21.1406 18.375 20.8251 18.375 20.4375C18.375 20.0499 18.6905 19.7344 19.0781 19.7344Z"
+                                            fill="#371406" />
+                                    </svg>
+                                </a>
+                                <a href="javascript:;" class="main-menu__search search-toggler d-lg-block d-none icon">
+                                    <div class="header-search-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_43515_29)">
+                                                <path
+                                                    d="M9.74062 0C15.1116 0 19.4812 4.36964 19.4812 9.74063C19.4812 12.1734 18.5847 14.4008 17.1047 16.1097L23.7941 22.7997C24.0687 23.0743 24.0686 23.5195 23.794 23.7941C23.5194 24.0687 23.0743 24.0686 22.7997 23.7941L16.1104 17.1041C14.4014 18.5845 12.1738 19.4813 9.74062 19.4813C4.36964 19.4813 0 15.1116 0 9.74063C0 4.36964 4.36964 0 9.74062 0ZM9.74062 18.075C14.3362 18.075 18.075 14.3362 18.075 9.74063C18.075 5.14505 14.3362 1.40625 9.74062 1.40625C5.14505 1.40625 1.40625 5.14505 1.40625 9.74063C1.40625 14.3362 5.14505 18.075 9.74062 18.075Z"
+                                                    fill="#371406" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_43515_29">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="account.html" class="cus-btn">
+                                    <span class="text">log in / sign up</span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <a href="" class="d-xl-none d-flex main-menu__toggler mobile-nav__toggler">
+                            <img src="assets/media/icon/menu-2.png" alt="">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- HEADER MENU END -->
+
+        <div class="title-banner">
+            <div class="container-fluid">
+                <img class="title-cup-img" src="assets/media/banner/title-img-1.png" alt="">
+                <div class="title-text">
+                    <h1 class="color-primary">Contact Us</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact Form Section Start -->
+        <section class="contact-section py-80">
+            <div class="container-fluid">
+                <div class="row align-items-center row-gap-4">
+                    <div class="col-lg-7">
+                        <div class="">
+                            <div class="mb-64">
+                                <h2 class="fw-700 color-primary mb-12">Contact Us!</h2>
+                                <p class="mb-12">Email, call, or complete the form to learn how <span
+                                        class="color-ter">Sip </span><br><span class="color-ter"> & Savor</span> can
+                                    solve your messaging problem.</p>
+                                <a href="mailto:info@email.com"
+                                    class="hover-content mb-12 text-16 light-gray">info@email.com</a><br>
+                                <a href="tel:+321221231" class="hover-content text-16 mb-12 light-gray">321-221-231</a><br>
+                                <a href="" class="hover-content color-ter text-decoration-underline">Customer
+                                    Support</a>
+                            </div>
+                            <div class="customer-block">
+                                <div>
+                                    <h6 class="fw-700 black mb-12">Customer Support</h6>
+                                    <p>Our support team is available<br> around the clock to address any<br> concerns or
+                                        queries you may<br> have.</p>
+                                </div>
+                                <div>
+                                    <h6 class="fw-700 black mb-12">Feedback and Suggestion</h6>
+                                    <p>We value your feedback and are<br> continuously working to improve <br>snappy.
+                                        Your input is crucial in<br> shaping the future of snappy.</p>
+                                </div>
+                                <div>
+                                    <h6 class="fw-700 black mb-12">Media Inquiries</h6>
+                                    <p>For media-related question or <br>press inquires, please contact us <br>at
+                                        media@royalspins.com.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="contact-wrapper">
+                            <h4 class="color-primary mb-12 fw-700">Get in Touch</h4>
+                            <p class="mb-32">Please feel free to get in touch with us using the contact form below. We’d
+                                love to hear
+                                for you.</p>
+                            <form class="contact-form" method="post">
+                                <input type="text" name="name" id="name" class="form-control mb-24" placeholder="Name">
+                                <input type="email" name="email" id="email" class="form-control mb-24"
+                                    placeholder="Email" required>
+                                <textarea name="message" id="comments" class="form-control mb-24"
+                                    placeholder="Your Message" required></textarea>
+                                <button type="submit" class="cus-btn w-100 mb-24">
+                                    <span class="text">submit</span></button>
+                                <div id="message" class="alert-msg"></div>
+                                <div class="text-center">
+                                    <p>By contacting us, you agree to our <span class="color-ter">Terms of
+                                            services</span><br> and <span class="color-ter">Privacy Policy
+                                        </span></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact Form Section End -->
+
+        <div class="map-sec py-80">
+            <div class="container-fluid">
+                <div class="row align-items-center row-gap-4">
+                    <div class="col-lg-7">
+                        <!-- Location Map -->
+                        <div class="map mb-16">
+                            <div class="map-wrapper">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443088.05176831636!2d-95.73093531411777!3d29.81736469329602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1716960714220!5m2!1sen!2s"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <!-- Location Map -->
+                    </div>
+                    <div class="col-lg-5">
+                        <div>
+                            <h2 class="fw-700 mb-48 color-primary">Our Location</h2>
+                            <h6 class="dark-gray mb-12 fw-700">Headquarters</h6>
+                            <p class="mb-12">Sip & Savor</p>
+                            <p class="mb-12">San Francisco, USA</p>
+                            <p class="mb-12">123 Tech Boulevard, Suite 456</p>
+                            <p class="mb-12">San Francisco, CA12345</p>
+                            <p class="">United States</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEWSLETTER START -->
+        <section class="newsletter-sec py-80">
+            <img class="coffee-vector" src="assets/media/vector/coffee-vector.png" alt="">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="newsletter-container">
+                            <div class="newsletter-imgs">
+                                <img class="news-img-1" src="assets/media/images/news-image-1.png" alt="">
+                                <div class="text-center">
+                                    <h2 class="fw-700 color-primary mb-12">Join in and Get <span class="color-ter">25%
+                                            Off!</span></h2>
+                                    <h6 class="fw-400 dark-gray mb-24">Subscribe To Our Newsletter and Get 25% Discount.
+                                    </h6>
+                                    <form>
+                                        <div class="d-flex flex-wrap gap-24 align-items-center justify-content-center">
+                                            <div class="newsletter-block">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <g clip-path="url(#clip0_43576_480)">
+                                                        <path
+                                                            d="M18.7422 3.25195H2.25781C1.2866 3.25195 0.5 4.04344 0.5 5.00977V15.5566C0.5 16.5287 1.29238 17.3145 2.25781 17.3145H18.7422C19.7053 17.3145 20.5 16.532 20.5 15.5566V5.00977C20.5 4.04516 19.7165 3.25195 18.7422 3.25195ZM18.496 4.42383C18.1369 4.78105 11.9564 10.929 11.743 11.1413C11.4109 11.4733 10.9695 11.6561 10.5 11.6561C10.0305 11.6561 9.58906 11.4733 9.25594 11.1402C9.11242 10.9974 3.00012 4.91734 2.50398 4.42383H18.496ZM1.67188 15.3181V5.24902L6.73586 10.2863L1.67188 15.3181ZM2.50473 16.1426L7.56672 11.1128L8.4284 11.9699C8.98176 12.5233 9.71746 12.828 10.5 12.828C11.2825 12.828 12.0182 12.5233 12.5705 11.971L13.4333 11.1128L18.4953 16.1426H2.50473ZM19.3281 15.3181L14.2641 10.2863L19.3281 5.24902V15.3181Z"
+                                                            fill="#45474F" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_43576_480">
+                                                            <rect width="20" height="20" fill="white"
+                                                                transform="translate(0.5 0.283203)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <input type="email" name="email" id="new-email" class="news-input"
+                                                    placeholder="Email Address">
+                                            </div>
+                                            <div>
+                                                <button type="submit" class="border-0 cus-btn"> <span
+                                                        class="text">subscribe</span></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <img class="news-img-2" src="assets/media/images/newsletter-img-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- NEWSLETTER END -->
+
+        <!-- FOOTER START -->
+        <footer class="pt-40">
+            <div class="container-fluid">
+                <div class="row align-items-start row-gap-4 mb-40">
+                    <div class="col-xl-4">
+   <div class="footer-logo">
+                           <a href="index.html">
+                               <img class="mb-16" src="assets/media/footer-logo.png" alt="">
+                           </a> 
+
+                            <p>Lorem ipsum dolor sit amet consectetur. Velit<br> interdum tellus elit diam amet eleifend
+                                <br>suspendisse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="footer-links-wrapper">
+                            <div>
+                                <h5 class="fw-700 dark-gray mb-24">Privacy</h5>
+                                 <ul>
+                                    <li class="text-16 mb-12"> <a href="">Terms of use</a></li>
+                                    <li class="text-16 mb-12"><a href="">Privacy Policy</a></li>
+                                    <li class="text-16 mb-0"> <a href="">Cookies</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="fw-700 dark-gray mb-24">Services</h5>
+                                <ul>
+                                    <li class="text-16 mb-12"> <a href="shop.html">Shop</a></li>
+                                    <li class="text-16 mb-12"><a href="product-detail.html">Order Ahead</a></li>
+                                    <li class="text-16 mb-0"> <a href="menu.html">Menu</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="fw-700 dark-gray mb-24">About Us</h5>
+                                <ul>
+                                    <li class="text-16 mb-12"> <a href="contact.html">Find a Location</a></li>
+                                    <li class="text-16 mb-12"><a href="about.html">About Us</a></li>
+                                    <li class="text-16 mb-12"><a href="about.html">Our Story</a></li>
+                                    <li class="text-16 mb-0"> <a href="account.html">Login</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="fw-700 dark-gray mb-24">Contact Us</h5>
+                                <div class="phone-link mb-16">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                            viewBox="0 0 21 21" fill="none">
+                                            <g clip-path="url(#clip0_43576_705)">
+                                                <path
+                                                    d="M16.9149 16.3136L16.4978 15.6171C15.7477 14.3803 14.7124 12.9608 13.3545 12.9608C13.1029 12.9608 12.8538 13.0114 12.6072 13.1139L11.8783 13.4264C11.8117 13.454 11.7471 13.4854 11.6786 13.5187C11.492 13.6094 11.2805 13.7122 11.0629 13.7122C10.5262 13.7122 9.90436 13.0137 9.31217 11.7455C8.73098 10.5008 8.76806 9.84828 8.90147 9.51994C9.04868 9.15768 9.39101 9.0028 9.75877 8.86361C9.80992 8.84422 9.8561 8.82663 9.90102 8.80814L10.6391 8.49738C12.5619 7.6933 11.8465 4.88335 11.612 3.96209L11.4131 3.17001C11.2431 2.5172 10.7922 0.783203 9.29683 0.783203C9.02 0.783203 8.72467 0.847699 8.41933 0.974977C8.21898 1.05454 5.46198 2.17993 4.46315 4.15702C3.26939 6.51036 3.49012 9.66616 5.11857 13.5347C6.73485 17.4082 8.83075 19.7774 11.3481 20.5765C11.7799 20.7137 12.2679 20.7831 12.7987 20.7831H12.7989C14.5362 20.7831 16.251 20.044 16.3902 19.9826C16.9892 19.7289 17.3763 19.3433 17.5409 18.8364C17.8198 17.9769 17.3519 17.0351 16.9149 16.3136ZM16.2537 18.4188C16.2155 18.5366 16.0825 18.6441 15.8588 18.7383C15.8551 18.7399 15.8506 18.7418 15.8468 18.7435C15.8313 18.7504 14.2791 19.4302 12.7986 19.4301C12.4069 19.4301 12.0566 19.382 11.7575 19.2869C9.63672 18.6137 7.82326 16.5032 6.36637 13.0118C4.89866 9.52481 4.66412 6.75157 5.67026 4.76816C6.45152 3.22179 8.89741 2.24081 8.9214 2.23143C8.92628 2.22945 8.93106 2.22755 8.93584 2.22557C9.07511 2.16712 9.19996 2.13627 9.29683 2.13627C9.59496 2.13627 9.86629 2.59865 10.1021 3.50494L10.3001 4.29368C10.7273 5.97148 10.6623 7.02092 10.1153 7.24968L9.38082 7.55908C9.35159 7.57116 9.3174 7.58388 9.2797 7.59823C8.87396 7.75184 8.02965 8.07135 7.64781 9.01055C7.30134 9.8628 7.44476 10.9447 8.08584 12.3182C8.94928 14.1667 9.92303 15.0653 11.0628 15.0653C11.5917 15.0653 12.0163 14.8589 12.27 14.7357C12.3167 14.713 12.3585 14.6922 12.4034 14.6736L13.1333 14.3606C13.2086 14.3292 13.281 14.3139 13.3544 14.3139C13.7057 14.3139 14.3357 14.6619 15.339 16.3157L15.7558 17.0117C16.2695 17.8599 16.3101 18.245 16.2537 18.4188Z"
+                                                    fill="#371406" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_43576_705">
+                                                    <rect width="20" height="20" fill="white"
+                                                        transform="translate(0.666016 0.783203)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <a href="tel:+001123456789" class="lead-16 ">+001 123 456 789</a>
+                                    </div>
+                                    <div class="free-lebel">
+                                        <p class="subtitle white fw-400">FREE</p>
+                                    </div>
+                                </div>
+                                <div class="phone-link mb-24">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                            viewBox="0 0 21 21" fill="none">
+                                            <g clip-path="url(#clip0_43576_710)">
+                                                <path
+                                                    d="M18.9082 3.75195H2.42383C1.45262 3.75195 0.666016 4.54344 0.666016 5.50977V16.0566C0.666016 17.0287 1.4584 17.8145 2.42383 17.8145H18.9082C19.8713 17.8145 20.666 17.032 20.666 16.0566V5.50977C20.666 4.54516 19.8825 3.75195 18.9082 3.75195ZM18.662 4.92383C18.3029 5.28105 12.1224 11.429 11.909 11.6413C11.577 11.9733 11.1355 12.1561 10.666 12.1561C10.1965 12.1561 9.75508 11.9733 9.42195 11.6402C9.27844 11.4974 3.16613 5.41734 2.67 4.92383H18.662ZM1.83789 15.8181V5.74902L6.90188 10.7863L1.83789 15.8181ZM2.67074 16.6426L7.73273 11.6128L8.59441 12.4699C9.14777 13.0233 9.88348 13.328 10.666 13.328C11.4486 13.328 12.1843 13.0233 12.7365 12.471L13.5993 11.6128L18.6613 16.6426H2.67074ZM19.4941 15.8181L14.4302 10.7863L19.4941 5.74902V15.8181Z"
+                                                    fill="#371406" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_43576_710">
+                                                    <rect width="20" height="20" fill="white"
+                                                        transform="translate(0.666016 0.783203)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <a href="mailto:exampleinfo@gmail.com"
+                                            class="color-ter">exampleinfo@gmail.com</a>
+                                    </div>
+                                </div>
+                                <h6 class="fw-700 dark-gray mb-16">Follow Us!</h6>
+                                <div class="social-links-block">
+                                    <a href="" class="social-links">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <g clip-path="url(#clip0_43576_866)">
+                                                <path
+                                                    d="M12.416 4.0332C12.6748 4.0332 12.8848 3.8232 12.8848 3.56445V0.751953C12.8848 0.493203 12.6748 0.283203 12.416 0.283203H9.60352C7.79414 0.283203 6.32227 1.75508 6.32227 3.56445V5.9082H4.91602C4.65727 5.9082 4.44727 6.1182 4.44727 6.37695V9.18945C4.44727 9.4482 4.65727 9.6582 4.91602 9.6582H6.32227V15.8145C6.32227 16.0732 6.53227 16.2832 6.79102 16.2832H9.60352C9.86227 16.2832 10.0723 16.0732 10.0723 15.8145V9.6582H11.9473C12.1763 9.6582 12.372 9.49258 12.4098 9.26664L12.8785 6.45414C12.901 6.3182 12.8629 6.17914 12.7738 6.07383C12.6848 5.96883 12.5538 5.9082 12.416 5.9082H10.0723V4.0332H12.416ZM9.60352 6.8457H11.8626L11.5501 8.7207H9.60352C9.34477 8.7207 9.13477 8.9307 9.13477 9.18945V15.3457H7.25977V9.18945C7.25977 8.9307 7.04977 8.7207 6.79102 8.7207H5.38477V6.8457H6.79102C7.04977 6.8457 7.25977 6.6357 7.25977 6.37695V3.56445C7.25977 2.27227 8.31133 1.2207 9.60352 1.2207H11.9473V3.0957H9.60352C9.34477 3.0957 9.13477 3.3057 9.13477 3.56445V6.37695C9.13477 6.6357 9.34477 6.8457 9.60352 6.8457Z"
+                                                    fill="#ECD6D0" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_43576_866">
+                                                    <rect width="16" height="16" fill="white"
+                                                        transform="translate(0.666016 0.283203)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="social-links">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <g clip-path="url(#clip0_43576_868)">
+                                                <path
+                                                    d="M8.82348 16.2832C8.77051 16.2832 8.71753 16.2832 8.66418 16.2829C7.41003 16.286 6.25122 16.2541 5.12427 16.1855C4.09106 16.1226 3.14795 15.7656 2.39673 15.153C1.67187 14.562 1.17688 13.7628 0.925537 12.7779C0.706787 11.9205 0.69519 11.0788 0.684082 10.2647C0.676025 9.68062 0.667725 8.98848 0.666016 8.28462C0.667725 7.57784 0.676025 6.8857 0.684082 6.30159C0.69519 5.48763 0.706787 4.64595 0.925537 3.78841C1.17688 2.80354 1.67187 2.00435 2.39673 1.41329C3.14795 0.800736 4.09106 0.443681 5.12439 0.380814C6.25134 0.312333 7.4104 0.280351 8.66723 0.283402C9.92175 0.280717 11.0802 0.312333 12.2072 0.380814C13.2404 0.443681 14.1835 0.800736 14.9347 1.41329C15.6597 2.00435 16.1545 2.80354 16.4059 3.78841C16.6246 4.64583 16.6362 5.48763 16.6473 6.30159C16.6554 6.8857 16.6638 7.57784 16.6654 8.28169V8.28462C16.6638 8.98848 16.6554 9.68062 16.6473 10.2647C16.6362 11.0787 16.6248 11.9204 16.4059 12.7779C16.1545 13.7628 15.6597 14.562 14.9347 15.153C14.1835 15.7656 13.2404 16.1226 12.2072 16.1855C11.1279 16.2512 10.0193 16.2832 8.82348 16.2832ZM8.66418 15.2919C9.89795 15.2949 11.0308 15.2636 12.1312 15.1967C12.9125 15.1492 13.834 14.6368 14.3889 14.1843C14.9019 13.7659 15.2552 13.1888 15.4389 12.4688C15.621 11.7551 15.6315 10.9887 15.6416 10.2476C15.6496 9.66743 15.6579 8.98018 15.6596 8.28316C15.6579 7.58601 15.6496 6.89888 15.6416 6.31868C15.6315 5.57759 15.621 4.81123 15.4389 4.09737C15.2552 3.3774 14.9019 2.80025 14.3889 2.38191C13.834 1.92952 12.9125 1.43208 12.1312 1.38459C11.0308 1.31758 9.89795 1.28669 8.66711 1.28938C7.43359 1.28645 6.30066 1.32125 5.20019 1.38826C4.41894 1.43575 3.58286 1.7708 3.02793 2.22319C2.51499 2.64153 2.06672 3.3774 1.883 4.09737C1.70087 4.81123 1.69038 5.57747 1.68024 6.31868C1.67231 6.89937 1.66401 7.58699 1.6623 8.28462C1.66401 8.9792 1.67231 9.66695 1.68024 10.2476C1.69038 10.9887 1.70087 11.7551 1.883 12.4688C2.06672 13.1888 2.41999 13.7659 2.93293 14.1843C3.48786 14.6367 4.41894 15.1492 5.20019 15.1967C6.30066 15.2637 7.43384 15.295 8.66418 15.2919ZM8.6344 12.1894C6.48059 12.1894 4.72815 10.4371 4.72815 8.28316C4.72815 6.12923 6.48059 4.37691 8.6344 4.37691C10.7883 4.37691 12.5406 6.12923 12.5406 8.28316C12.5406 10.4371 10.7883 12.1894 8.6344 12.1894ZM8.66711 5.28646C6.9108 5.28646 5.67477 6.52249 5.67477 8.28169C5.67477 9.74629 6.78225 11.2919 8.64984 11.2919C10.1146 11.2919 11.6374 9.90426 11.6374 8.28169C11.6374 6.81709 10.52 5.28646 8.66711 5.28646ZM12.9781 3.12691C12.4604 3.12691 12.0406 3.54659 12.0406 4.06441C12.0406 4.58223 12.4604 5.00191 12.9781 5.00191C13.496 5.00191 13.9156 4.58223 13.9156 4.06441C13.9156 3.54659 13.496 3.12691 12.9781 3.12691Z"
+                                                    fill="#ECD6D0" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_43576_868">
+                                                    <rect width="16" height="16" fill="white"
+                                                        transform="translate(0.666016 0.283203)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="social-links">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17" fill="none">
+                                            <g clip-path="url(#clip0_43576_870)">
+                                                <path
+                                                    d="M10.1612 7.05811L15.9895 0.283203H14.6083L9.54764 6.16576L5.50568 0.283203H0.84375L6.95599 9.17867L0.84375 16.2832H2.22494L7.56917 10.071L11.8378 16.2832H16.4997L10.1608 7.05811H10.1612ZM8.26944 9.25704L7.65014 8.37125L2.72261 1.32294H4.84404L8.82062 7.01116L9.43992 7.89694L14.609 15.2907H12.4876L8.26944 9.25738V9.25704Z"
+                                                    fill="#ECD6D0" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_43576_870">
+                                                    <rect width="16" height="16" fill="white"
+                                                        transform="translate(0.666016 0.283203)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-line mb-24"></div>
+                <div class="text-center mb-24">
+                    <p>@2024 All Rights Copyright <span class="fw-700 color-ter"> Sip & Savor.</span> Design &
+                        Developed By <span class="fw-700 color-ter">UIPARADOX</span> </p>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+
+    </div>
+    <!-- Main Wrapper End -->
+
+
+    <!-- Mobile Menu Start -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/media/mobile-logo.png" alt=""></a>
+            </div>
+            <div class="mobile-nav__container"></div>
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:example@company.com">example@company.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+12345678">+123 (4567) -890</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Mobile Menu End -->
+
+    <!-- modal-popup area end  -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="index.html">
+                <input type="text" id="search" placeholder="Search Here...">
+                <button type="submit"><i class="fal fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <!-- search-popup -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/jquery-validator.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+
+</body>
+
+</html>
