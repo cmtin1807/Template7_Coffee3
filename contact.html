@@ -105,8 +105,8 @@
                             <!--                                        </svg>-->
                             <!--                                    </div>-->
                             <!--                                </a>-->
-                            <a href="contact.html" class="cus-btn">
-                                <span class="text">Liên hệ</span>
+                            <a href="contact.html" class="cus-btn">                                <span class="text">Liên hệ</span>
+
                             </a>
 
                         </div>
@@ -161,6 +161,38 @@
                 </div>
             </div>
         </div>
+    <!-- contact Form Section Start -->
+    <section class="contact-section py-80">
+        <div class="container-fluid">
+            <div class="row align-items-center row-gap-4">
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-wrapper">
+                        <h4 class = "màu chính MB-12 FW-700"> Liên lạc </h4>
+                        <p class = "MB-32"> Xin vui lòng liên lạc với chúng tôi bằng cách sử dụng biểu mẫu liên hệ bên dưới. Chúng tôi
+                            thích nghe
+                            cho bạn. </p>
+                        <form id="contact-form" class="contact-form" method="post">
+                            <input type="text" name="name" id="name" class="form-control mb-24" placeholder="Họ và tên">
+                            <input type="email" name="email" id="email" class="form-control mb-24" placeholder="Email" required>
+                            <input type="text" name="phone" id="phone" class="form-control mb-24" placeholder="Số điện thoại">
+                            <textarea name="message" id="message" class="form-control mb-24" placeholder="Nội dung tin nhắn" required></textarea>
+
+                            <button type="submit" class="cus-btn w-100 mb-24">
+                                <span class="text">Gửi</span>
+                            </button>
+
+                            <div id="alert-message" class="alert-msg"></div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact Form Section End -->
 
 
     <!-- NEWSLETTER START -->
@@ -370,6 +402,29 @@
     <!-- Back To Top Start -->
     <button class="scrollToTopBtn" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
 
+<!-- Modal Thông Báo -->
+<!-- Modal Thông Báo -->
+<div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow-lg border-0 bg-white">
+            <div class="modal-header border-bottom-0">
+                <h5 class="modal-title fw-bold" id="notificationModalLabel">Thông báo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div id="modalIcon" class="mb-3">
+                    <!-- Icon sẽ được thay đổi bằng JavaScript -->
+                </div>
+                <p id="modalMessage" class="fs-5"></p>
+            </div>
+            <div class="modal-footer justify-content-center border-top-0">
+                <button type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- Jquery Js -->
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
@@ -378,6 +433,41 @@
 
     <script src="assets/js/app.js"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+<script>
+    (function () {
+        emailjs.init("FLg1jX0Ayx7VjvgOT"); // Public Key của bạn
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            message: document.getElementById("message").value
+        };
+
+        emailjs.send("service_gt4htsk", "template_k4kas2e", params)
+            .then(function (response) {
+                showModal("Gửi email thành công!"); // Hiển thị modal khi gửi thành công
+                document.getElementById("contact-form").reset();
+            }, function (error) {
+                showModal("Lỗi! Vui lòng thử lại."); // Hiển thị modal khi lỗi
+            });
+    });
+
+    // Hàm hiển thị modal
+    function showModal(message) {
+        document.getElementById("modalMessage").innerText = message;
+        var myModal = new bootstrap.Modal(document.getElementById("notificationModal"));
+        myModal.show();
+    }
+</script>
 
 </body>
 
